@@ -87,6 +87,8 @@ lint/tmp/
 =======
 *.iml
 .gradle
+gradlew
+gradlew.bat
 /local.properties
 /.idea/caches
 /.idea/libraries
