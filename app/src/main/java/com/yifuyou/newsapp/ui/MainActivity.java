@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.yifuyou.http.NetConnect;
 import com.yifuyou.http.SocketServerN;
 import com.yifuyou.newsapp.R;
+import com.yifuyou.newsapp.ui.fragment.SettingActivity;
 import com.yifuyou.recorder.RecorderActivity;
 
 
@@ -80,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent("com.yifuyou.recorder.RecorderActivity");
                     startActivity(intent);
                     break;
+                case R.id.button_2:
+                    Intent setting = new Intent(this, SettingActivity.class);
+                    startActivity(setting);
 
                 default:break;
 

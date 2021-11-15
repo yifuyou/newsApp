@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2675925925925926" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.25" />
         <entry key="app/src/main/res/layout/recorder_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/setting_layout.xml" value="0.25" />
         <entry key="common/src/main/res/drawable/title_bg_drawable.xml" value="0.75" />
         <entry key="common/src/main/res/layout/toast_layout.xml" value="0.2261055634807418" />
         <entry key="recorder/src/main/res/drawable/dr.xml" value="0.2675925925925926" />
