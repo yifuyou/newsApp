@@ -12,6 +12,12 @@ import com.baidu.speech.asr.SpeechConstant;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+ * 封装（） 触碰事件监听
+ * 开发三个回调接口 onStart, onSpeak(String), onFinish
+ *
+ *
+ * */
 public abstract class SpeakTouch implements View.OnTouchListener {
 
     private EventManager asr;

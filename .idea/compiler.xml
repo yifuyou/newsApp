@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="NewsApp.app" target="11" />
       <module name="NewsApp.common" target="11" />
+      <module name="NewsApp.core" target="11" />
       <module name="NewsApp.recorder" target="11" />
     </bytecodeTargetLevel>
   </component>

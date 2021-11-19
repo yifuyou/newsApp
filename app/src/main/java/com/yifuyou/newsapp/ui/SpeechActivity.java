@@ -76,25 +76,23 @@ public class SpeechActivity extends AppCompatActivity {
     }
 
     /* 用弹窗来实现语音识别 */
-    private void dialogShow() {
+ /*   private void dialogShow() {
         dialog = DialogSpeech.of(this);
         dialog.setPositiveButton((data, v) -> System.out.println(data));
         dialog.setNegativeButton((d, w) -> {
             System.out.println("cancel");
         });
         dialog.show();
-    }
+    }*/
 
-
+// 提示音播放功能
     private SoundPool soundPool;
     private int soundID;
-
     @SuppressLint("NewApi")
     private void initSound() {
         soundPool = new SoundPool.Builder().build();
         soundID = soundPool.load(this, R.raw.press, 1);
     }
-
 
     private void playSound() {
         soundPool.play(
