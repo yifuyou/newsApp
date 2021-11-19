@@ -4,6 +4,7 @@
     package="com.yifuyou.newsapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
@@ -19,6 +20,7 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:extractNativeLibs="true"
         android:theme="@style/Theme.NewsApp">
         <activity
             android:name=".ui.MainActivity"
@@ -39,8 +41,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.fragment.SettingActivity"/>
-
+        <activity android:name=".ui.SettingActivity"/>
+        <activity android:name=".ui.SpeechActivity"/>
+        <activity android:name=".ui.SpeechMiniActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="在线识别"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category
+                android:name="com.baidu.speech.recognizerdemo.intent.category.SAMPLE_CODE"/>
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>

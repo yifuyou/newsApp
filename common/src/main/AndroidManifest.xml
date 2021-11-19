@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yifuyou.common">
+    package="com.yifuyou.newsapp.common">
+<application>
+    <meta-data
+        android:name="com.baidu.speech.APP_ID"
+        android:value="25191240"/>
 
+    <meta-data
+        android:name="com.baidu.speech.API_KEY"
+        android:value="7Rh7Qy1nNI4vYZ9HzV5RxmUG"/>
+    <meta-data
+        android:name="com.baidu.speech.SECRET_KEY"
+        android:value="jGc34r4BinfWXsPVypYo8HpV1FGBRY1e"/>
+</application>
 </manifest>

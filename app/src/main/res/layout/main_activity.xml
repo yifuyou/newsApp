@@ -55,7 +55,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:text="工厂模式"
+                android:text="语音练习"
                 android:onClick="click" />
             <Button
                 android:id="@+id/button_4"

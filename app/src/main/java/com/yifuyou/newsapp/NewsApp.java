@@ -2,7 +2,7 @@ package com.yifuyou.newsapp;
 
 import android.app.Application;
 
-import com.yifuyou.common.InitCommon;
+import com.yifuyou.newsapp.common.InitCommon;
 
 public class NewsApp extends Application {
 

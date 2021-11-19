@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Dialog.Round"
+    android:background="@drawable/speech_layout_bg_drawable">
+
+    <Button
+        android:id="@+id/speech_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/speech_cancel"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speech_content"
+      />
+
+    <Button
+        android:id="@+id/speech_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        app:layout_constraintBottom_toBottomOf="@+id/speech_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/speech_finish"
+        app:layout_constraintStart_toEndOf="@id/speech_finish"/>
+
+    <TextView
+        android:id="@+id/speech_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="语音识别"
+        app:layout_constraintBottom_toTopOf="@id/speech_content"
+        app:layout_constraintEnd_toEndOf="@+id/speech_finish"
+        app:layout_constraintStart_toStartOf="@+id/speech_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/speech_content"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="TextView"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/speech_cancel"
+        app:layout_constraintStart_toStartOf="@+id/speech_finish"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/speech_time"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/speech_content"
+        app:layout_constraintEnd_toEndOf="@+id/speech_content"
+        app:layout_constraintStart_toStartOf="@+id/speech_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

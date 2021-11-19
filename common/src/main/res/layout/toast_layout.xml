@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:text="content" />
-    <com.yifuyou.common.widgetsetting.ClickWidget
+    <com.yifuyou.newsapp.common.widgetsetting.ClickWidget
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"/>

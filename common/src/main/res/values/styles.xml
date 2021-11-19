@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Dialog.Round" parent="android:style/Theme.Dialog">
+        <!--   背景模糊     -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="windowNoTitle" >true</item>
+        <!--   底部透明（底部仍是方的）     -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

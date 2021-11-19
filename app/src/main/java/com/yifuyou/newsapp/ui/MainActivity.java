@@ -15,8 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.yifuyou.http.NetConnect;
 import com.yifuyou.http.SocketServerN;
 import com.yifuyou.newsapp.R;
-import com.yifuyou.newsapp.ui.fragment.SettingActivity;
-import com.yifuyou.recorder.RecorderActivity;
 
 
 import java.io.IOException;
@@ -84,7 +82,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.button_2:
                     Intent setting = new Intent(this, SettingActivity.class);
                     startActivity(setting);
-
+                    break;
+                case R.id.button_3:
+                    Intent speech=new Intent(this, SpeechActivity.class);
+                    startActivity(speech);
                 default:break;
 
             }
